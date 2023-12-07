@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import {Link} from 'react-router-dom';
 import { Avatar} from 'antd';
 
-const anyaIcon = require('../images/anya_icon.jpeg');
+const anyaIcon = require('../../images/anya_icon.jpeg');
 
 
 const navURL = [
