@@ -1,8 +1,8 @@
-import moment from 'moment'
+import moment from "moment";
 
 export default [
     {
-        title:'More about Tech',
+        title:'More About AI',
         date:moment().format('MMMMM DD. YYYY'),
         categories:[''],
         Links: '#',
