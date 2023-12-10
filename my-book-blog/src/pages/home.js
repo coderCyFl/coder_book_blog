@@ -10,8 +10,12 @@ const trendingCongig = {
     }
 }
 
+
+// tbc
 const featuredConfig = {
-    
+    1 : {
+        gridArea: '1 / 1 / 3 / 3'
+    }
 
 }
 
