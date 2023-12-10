@@ -11,6 +11,7 @@ const trendingCongig = {
 }
 
 const featuredConfig = {
+    
 
 }
 
@@ -35,8 +36,13 @@ export default function Home () {
     return (
         <section className="container home">
             <div className="row">
-                 <h1>Recent Post</h1>
-                 <PostMasonry posts ={trending} columns={3}/>
+                <h1>Featured Post</h1> 
+                <section className="featured-post-container">
+                    <PostMasonry posts={featured} columns={2} tagsOnTop={true}/>
+                    <MasonryPost post={lastFeatured} tagsOnTop={true}/>                    
+                </section>
+                <h1>Recent Post</h1>
+                <PostMasonry posts ={trending} columns={3}/>
             </div>
         </section>
         
