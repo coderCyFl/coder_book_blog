@@ -13,10 +13,7 @@ const trendingCongig = {
 
 // tbc
 const featuredConfig = {
-    1 : {
-        gridArea: '1 / 1 / 3 / 3'
-    }
-
+    
 }
 
 const mergeStyles = function (posts, config) {
@@ -30,25 +27,20 @@ mergeStyles(featured,featuredConfig)
 
 const lastFeatured = featured.pop();
 
-// <section className="featured-post-container"> 
-// <PostMasonry post={featured} columns={2} tagsOnTop={true}/>
-// <MasonryPost post={lastFeatured} tagsOnTop={true}/>
-// </section>
+// <section className="featured-post-container">
+//<PostMasonry posts={featured} columns={2} tagsOnTop={true}/>
+//<MasonryPost post={lastFeatured} tagsOnTop={true}/>                    
+//</section>
 
 
 export default function Home () {
     return (
         <section className="container home">
-            <div className="row">
-                <h1>Featured Post</h1> 
-                <section className="featured-post-container">
-                    <PostMasonry posts={featured} columns={2} tagsOnTop={true}/>
-                    <MasonryPost post={lastFeatured} tagsOnTop={true}/>                    
-                </section>
+            <div className="row">               
                 <h1>Recent Post</h1>
                 <PostMasonry posts ={trending} columns={3}/>
             </div>
         </section>
-        
+
     )
 }
