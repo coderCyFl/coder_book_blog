@@ -87,6 +87,7 @@
             flex-direction: column-reverse;
             padding: 0;
             padding-left: 30px;
+            z-index: 1; // TEMPORARY HANDLING
 
             a {
                 width: 100%;

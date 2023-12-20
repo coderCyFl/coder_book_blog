@@ -32,6 +32,7 @@ export default function PostGrid ({posts}) {
                                 By:
                                 <Link to={`/authors/${post.author}`}>
                                     {post.author}
+                                    
                                 </Link>
                             </span>
                         <span>
