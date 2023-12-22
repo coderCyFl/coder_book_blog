@@ -3,7 +3,15 @@
         width: '100%';
         color: $text-color
     }
+
+    .featured-posts-container {
+        display: flex;
+    }
 }
+
+
+
+
 
 @media screen and (max-width: 900px) {
     .home {
@@ -12,7 +20,13 @@
             margin-block-end: 1.5em;
         }
 
-        flex-direction: column;
+        //flex-direction: column;
+
+        .featured-posts-container {
+            flex-direction: column;
+        }
+
+
      
     }    
 }
