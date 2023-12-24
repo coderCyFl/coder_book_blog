@@ -9,10 +9,6 @@
     }
 }
 
-
-
-
-
 @media screen and (max-width: 900px) {
     .home {
         h1 {
@@ -20,13 +16,9 @@
             margin-block-end: 1.5em;
         }
 
-        //flex-direction: column;
-
         .featured-posts-container {
             flex-direction: column;
         }
 
-
-     
     }    
 }

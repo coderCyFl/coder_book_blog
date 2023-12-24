@@ -3,12 +3,17 @@ import {MasonryPost, PostMasonry} from '../components/common'
 import trending from "../assets/mocks/trending";
 import featured from "../assets/mocks/featured";
 
-
 const trendingCongig = {
-    1 : {
+  1: {
         gridArea: '1 / 2 / 3 / 3'
-    }
-}
+  },
+  2: {
+        height:'300px'
+  },
+  3:{
+        height:'300px'
+  }
+};
 
 const featuredConfig = {
     0: {
@@ -31,9 +36,6 @@ const mergeStyles = function (posts, config) {
     })
 }
 
-
-
-
 mergeStyles(trending,trendingCongig)
 mergeStyles(featured,featuredConfig)
 
@@ -49,7 +51,7 @@ export default function Home () {
                     <MasonryPost post={lastFeatured} tagsOnTop={true}/>                    
                     </section>
                 <h1>Recent Post</h1>
-                <PostMasonry posts ={trending} columns={3}/>
+                <PostMasonry className="trending-Masonry" posts ={trending} columns={3}/>
             </div>
         </section>
 

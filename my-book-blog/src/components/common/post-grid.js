@@ -1,7 +1,7 @@
 import React, {useState, useMemo,useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import { Pagination } from 'antd';
-import TagRow from './tag-row';
+import {TagRow} from './';
 
 export default function PostGrid ({posts}) {
 
@@ -12,7 +12,7 @@ export default function PostGrid ({posts}) {
         const lastIndex = current * pageSize
         const firstIndex = lastIndex - pageSize
         
-        return posts.slice(firstIndex, lastIndex)
+        return posts?.slice(firstIndex, lastIndex)
     }, [current, pageSize])
 
     return (
@@ -22,7 +22,7 @@ export default function PostGrid ({posts}) {
                     <div className='post-container'>
                         <figure>
                             <Link to={post.link}>
-                                <img src={require(`../../assets/images/${post.image}`)} alt='{posts.image}'/>
+                                <img src={require(`../../assets/images/${post.image}`)} alt={posts.image}/>
                             </Link>
                         </figure>
                         <TagRow tags={post.categories}/>
@@ -31,8 +31,7 @@ export default function PostGrid ({posts}) {
                             <span>
                                 By:
                                 <Link to={`/authors/${post.author}`}>
-                                    {post.author}
-                                    
+                                    {post.author}                                    
                                 </Link>
                             </span>
                         <span>
@@ -51,7 +50,7 @@ export default function PostGrid ({posts}) {
             showSizeChanger
             onShowSizeChange={setPageSize}
             pageSize={pageSize}
-            total={posts.length}
+            total={posts?.length}
             defaultCurrent={current}
             onChange={setCurrent}
             />

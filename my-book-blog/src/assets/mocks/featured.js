@@ -33,13 +33,5 @@ export default [
         Links: '#',
         image:'more_about_ai.jpeg',
         author:'coderCy',
-    },
-    {
-        title:'More about Tech',
-        date:moment().format('MMMMM DD. YYYY'),
-        categories:['Cloud'],
-        Links: '#',
-        image:'more_about_ai.jpeg',
-        author:'coderCy',
     }
 ]
