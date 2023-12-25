@@ -19,7 +19,7 @@ const navURL = [
         path:'/aboutme'
     },
     {
-        title: 'Login',
+        title: 'Our Service',
         path:'/login'
     }
 ]

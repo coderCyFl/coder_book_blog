@@ -1,0 +1,50 @@
+.about-me-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 150px auto 20px;
+    gap: 20px;
+    height: 400px;
+}
+
+.header-text{
+    color: $text-link;
+    text-align: justify;
+    font-size: 45px;
+    
+}
+
+.image-grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%; /* Make the image fill its container */
+    max-width: 500px; /* Inc* Adjust the maximum width of the image */
+    border-radius: 30px; /* Make the image circular */
+}
+
+.personal-info-container p {
+   display: flex;
+   max-width: 600px; /* Adjust the maximum width as needed */
+   margin-bottom: 15px;
+   line-height: 1.6;
+   font-weight: 5em;
+  }
+
+@media screen and (max-width: 900px) {
+    .about-me-container{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .header-text
+    .image-grid-container{
+        text-align: center;
+    }
+}
+
+
+  

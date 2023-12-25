@@ -1,0 +1,13 @@
+.circle-progress-container {
+    margin-bottom: 20px; // Add space between circular bars
+  }
+  
+  .circle-progress {
+    width: 100px; // Set the desired width of the circular progress bar
+    height: 100px; // Set the desired height of the circular progress bar
+  
+    .MuiCircularProgress-circle {
+      stroke-width: 8px; // Set the desired thickness of the circular progress
+    }
+ }
+  
