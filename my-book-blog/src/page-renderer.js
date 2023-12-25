@@ -5,11 +5,8 @@ import {useRouteMatch} from 'react-router-dom'
 
 const generatePage = page => {
     const component = () => require(`./pages/${page}`).default
-    console.log("what is component?")
 
-    
     try{
-        console.log("starting creating component")
         return React.createElement(component())
     }catch(err){
         console.warn(err)

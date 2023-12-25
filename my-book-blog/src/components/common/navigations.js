@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import {Link} from 'react-router-dom';
 import { Avatar} from 'antd';
 
-const anyaIcon = require('../images/anya_icon.jpeg');
+const anyaIcon = require('../../images/anya_icon.jpeg');
 
 
 const navURL = [
@@ -30,7 +30,7 @@ export default function Navigation ({user}) {
 
     return(
     <nav className="web-navigation" role="navigation">
-        <span className="menu-title">Coder's Book Share Blog</span>
+        <span className="menu-title">coderCy ^_^</span>
        <div className={`menu-content-container ${menuActive && 'active'}`}>  
         <ul>
             { navURL.map((link,index) => (

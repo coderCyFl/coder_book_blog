@@ -1,5 +1,11 @@
 @import './_variable';
 @import './_navigation';
+@import './_home';
+@import './_masonry-post';
+@import './_post-masonry';
+@import './tag-row';
+@import './post-grid';
+@import'./aboutme';
 
 body {
 
@@ -16,7 +22,7 @@ h1 {
 }
 
 .container{
-    max-width: 120px;
+    max-width: 1200px;
     margin: 0 auto;;
 }
 
