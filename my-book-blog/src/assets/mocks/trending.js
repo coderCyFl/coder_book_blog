@@ -1,39 +1,50 @@
 import moment from "moment";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
         title:'More About AI',
         date:moment().format('MMMMM DD. YYYY'),
-        categories:[''],
+        categories:['Tech Culture','Tech News'],
         Links: '#',
         image:'more_about_ai.jpeg',
+        author:'coderCy',
+        description:'There are something need me to test'
     },
     {
-        title:'More about Tech',
+        title:'Daily Life Sharing',
         date:moment().format('MMMMM DD. YYYY'),
-        categories:[''],
+        categories:['Cloud'],
         Links: '#',
-        image:'more_about_ai.jpeg',
+        image:'more_my_life.jpeg',
+        author:'coderCy',
+        description:'There are something need me to test'
     },
     {
-        title:'More about Tech',
+        title:'Digital Marketing',
         date:moment().format('MMMMM DD. YYYY'),
-        categories:[''],
+        categories:['Tech News','Tech Culture'],
         Links: '#',
-        image:'more_about_ai.jpeg',
+        image:'digital_marketing.png',
+        author:'coderCy',
+        description:'There are something need me to test'
     },
     {
-        title:'More about Tech',
+        title:'The power of book',
         date:moment().format('MMMMM DD. YYYY'),
-        categories:[''],
+        categories:['Brain Health'],
         Links: '#',
-        image:'more_about_ai.jpeg',
+        image:'book_sharing.png',
+        author:'coderCy',
+        description:'There are something need me to test'
     },
     {
-        title:'More about Tech',
+        title:'My baby didas baby ^_^',
         date:moment().format('MMMMM DD. YYYY'),
-        categories:[''],
+        categories:['Cloud'],
         Links: '#',
-        image:'more_about_ai.jpeg',
+        image:'my_baby_cat.JPG',
+        author:'coderCy',
+        description:'There are something need me to test'
     }
 ]

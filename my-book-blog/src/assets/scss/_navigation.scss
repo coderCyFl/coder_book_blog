@@ -5,6 +5,9 @@
    display: flex;
    justify-content: space-between;
    color: $text-color;
+   position: fixed;
+   z-index: 100;
+   top: 0;
 
 
    .menu-title {
@@ -80,13 +83,14 @@
             width: 200px;
             height: calc(100% - 65px);
             background: white;
-            position: absolute;
+            position: fixed;
             top: 65px;
             left: -300px;
             transition: 300ms ease left;
             flex-direction: column-reverse;
             padding: 0;
             padding-left: 30px;
+            z-index: 2; // TEMPORARY HANDLING
 
             a {
                 width: 100%;
