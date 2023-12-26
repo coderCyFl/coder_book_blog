@@ -7,6 +7,8 @@ const techSkills = [
    { techName: 'JS', value: 75  },
    { techName: 'C#', value: 95 },
    { techName: 'Node.js', value: 85 },
+   { techName: 'Python', value: 85},
+   { techName: 'Angular', value: 90}
 ]
 
 export default function AboutMe(){
@@ -25,6 +27,7 @@ export default function AboutMe(){
             <p>
           My journey into the tech world has been driven by an unwavering passion for innovation. Originating from the bustling streets of Hong Kong, I bring a unique perspective to my work, combining cultural richness with technological creativity.
             </p>
+            <h3 className="tech-skill-text">Tech Skill</h3>
             <div className="progress-bar-container circle-progress-container">
             {techSkills.map((techSkill, index) => (
             <CircleProgressWithLabel

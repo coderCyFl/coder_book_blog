@@ -34,15 +34,31 @@
    font-weight: 5em;
   }
 
+.tech-skill-text{
+    color: $text-link;
+    margin-top: 15px;
+}
+
 @media screen and (max-width: 900px) {
     .about-me-container{
         grid-template-columns: 1fr;
         height: auto;
     }
 
-    .header-text
+    .header-text{
+        text-align: center;
+    }
     .image-grid-container{
         text-align: center;
+    }
+
+    .personal-info-container p {
+        text-align: center;
+        
+    }
+
+    .progress-bar-container circle-progress-container {
+        flex-direction: column;
     }
 }
 

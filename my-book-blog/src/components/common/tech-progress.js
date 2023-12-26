@@ -1,9 +1,28 @@
 import React from "react";
-import { CircularProgress } from '@mui/material';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import { CircularProgress, Typography, Box } from '@mui/material';
 
 export default function CircleProgressWithLabel ({value, techName, className}) {
+    let progressColor;
+
+    // Set color based on techName
+    switch (techName.toLowerCase()) {
+      case 'js':
+        progressColor = 'yellow';
+        break;
+      case 'c#':
+        progressColor = 'purple';
+        break;
+      case 'node.js':
+        progressColor = 'green';
+        break;
+      case 'angular':
+        progressColor = 'red';
+        break;
+      // Add more cases as needed
+      default:
+        progressColor = 'blue'; // Default color
+    }
+
     return (
         <Box
           sx={{
@@ -14,7 +33,19 @@ export default function CircleProgressWithLabel ({value, techName, className}) {
             ...className, // Apply custom styles from the className prop
           }}
         >
-          <CircularProgress variant="determinate" value={value} size={100} thickness={2} />
+          <CircularProgress
+            variant="determinate"
+            value={value}
+            size={70}
+            thickness={4}
+            sx={{
+              color: progressColor,
+              flexDirection: 'column', // Set flex direction to column
+              '@media screen and (max-width: 900px)': {
+                flexDirection: 'row', // Set flex direction back to row for larger screens
+              },
+            }}
+          />
           <Box
             sx={{
               top: 0,
