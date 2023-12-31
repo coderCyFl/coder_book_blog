@@ -20,7 +20,7 @@ const navURL = [
     },
     {
         title: 'Our Service',
-        path:'/login'
+        path:'/services'
     }
 ]
 
