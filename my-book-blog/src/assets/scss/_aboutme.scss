@@ -1,0 +1,96 @@
+.about-me-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 70px auto 20px;
+    gap: 20px;
+    height: 400px;
+}
+
+.header-text{
+    color: $text-link;
+    text-align: justify;
+    font-size: 45px;
+    
+}
+
+.contactme-text {
+    color: $text-link;
+    font-size: 30px;;
+}
+
+.image-grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%; /* Make the image fill its container */
+    max-width: 350px; /* Inc* Adjust the maximum width of the image */
+    border-radius: 30px; /* Make the image circular */
+}
+
+.personal-info-container p {
+   display: flex;
+   max-width: 600px; /* Adjust the maximum width as needed */
+   margin-bottom: 15px;
+   line-height: 1.6;
+   font-weight: 5em;
+  }
+
+.tech-skill-text{
+    color: $text-link;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .about-me-container{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .personal-info-container p{
+        text-align: center;
+        align-items: center;
+    }
+
+    .tech-skill-text{
+        text-align: center;
+    }
+
+    .header-text{
+        text-align: center;
+    }
+    .image-grid-container{
+        text-align: center;
+    }
+
+    .personal-info-container p {
+        text-align: center;
+    }
+
+    .contactme-text{
+        text-align: center;
+    }
+
+    .progress-bar-container circle-progress-container {
+        flex-direction: column;
+    }
+
+    .social-media-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+  

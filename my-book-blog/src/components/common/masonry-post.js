@@ -22,14 +22,4 @@ export default function MasonryPost({ post, tagsOnTop }) {
     );
 }
 
-/*
-<div className='tags-container'>
-                    {post.categories?.map((tag, ind) => 
-                        <span key={ind} className='tag' style={{backgroundColor: categoryColors[tag]}}>
-                            {tag.toUpperCase()}
-
-                        </span>        
-                    )}
-                </div>
-*/
 
