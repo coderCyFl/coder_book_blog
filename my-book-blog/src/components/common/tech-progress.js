@@ -29,7 +29,8 @@ export default function CircleProgressWithLabel ({value, techName, className}) {
             position: 'relative',
             display: 'inline-flex',
             alignItems: 'center',
-            margin: '0 10px', // Add space between circular bars
+            margin: '0 10px',
+            marginBottom:'30px',// Add space between circular bars
             ...className, // Apply custom styles from the className prop
           }}
         >
